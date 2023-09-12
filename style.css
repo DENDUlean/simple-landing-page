@@ -1,0 +1,161 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+/* root */
+:root{
+    --clr-white: #ffffff;
+    --clr-black: #000000;
+    --clr-blue: #2336b5;
+    --clr-green: #159a2b;
+
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+    --fw-800: 800;
+    --fw-900: 900;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#left{
+    width: 40%;
+    height: 100%;
+    background-color: var(--clr-white);
+
+    position: relative;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4%;
+    font-size: 18px;
+    font-weight: var(--fw-600);
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--clr-black);
+}
+
+.menu-item{
+    color: var(--clr-black);
+    opacity: 0.5;
+    transition: 0.5s ease;
+}
+
+.menu-item:hover{
+    opacity: 1;
+}
+
+.fa-arrow-right{
+    transform: rotate(180deg);
+}
+
+.fa-instagram{
+    color: var(--clr-black);
+}
+
+.left-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.left-text h1{
+    font-size: 50px;
+}
+
+.left-text p{
+    font-size: 15px;
+    font-weight: var(--fw-600);
+    opacity: 0.5;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.left-text a{
+    text-decoration: none;
+    color: var(--clr-black);
+    font-size: 18px;
+    font-weight: var(--fw-500);
+    position: relative;
+}
+
+.left-text a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--clr-black);
+    margin-bottom: -5px;
+}
+
+#right{
+    width: 60%;
+    height: 100%;
+    background-color: salmon;
+    position: relative;
+}
+
+.right-top{
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+
+.right-top-left{
+    width: 50%;
+    height: 100%;
+    background-image: url(/assets/imgs/cl-1.PNG);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.right-top-right{
+    width: 50%;
+    height: 100%;
+    background-image: url(/assets/imgs/cl-2.PNG);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.right-bottom{
+    width: 100%;
+    height: 50%;
+    background-image: url(/assets/imgs/book.PNG);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.334);
+}
